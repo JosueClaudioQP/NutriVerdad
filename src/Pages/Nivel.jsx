@@ -58,7 +58,7 @@ function Nivel() {
       setShowModal(true);
       if (parseInt(nivel) === user.nivel) {
         await axios.patch(
-          'http://localhost:8080/api/user/nivel',
+          'https://backnutriverdad.onrender.com/api/user/nivel',
           { nivel: parseInt(nivel) + 1 },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );

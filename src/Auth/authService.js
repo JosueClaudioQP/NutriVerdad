@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api';
+const API_URL = 'https://backnutriverdad.onrender.com/api';
 
 export const login = async (email, password) => {
   const response = await axios.post(`${API_URL}/auth/login`, { email, password });
